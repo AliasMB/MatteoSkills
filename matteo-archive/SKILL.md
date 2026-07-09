@@ -1,6 +1,6 @@
 ---
 name: matteo-archive
-description: Use when starting a new task or project to check if Matteo has worked on something similar in the past. Acts as an index of past project logs.
+description: Use when starting a new task or project to check if Matteo has worked on something similar in the past
 ---
 
 # Matteo's Project Archive

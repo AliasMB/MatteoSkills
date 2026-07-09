@@ -1,6 +1,6 @@
 ---
 name: matteo-habits
-description: Use when interacting with Matteo, starting any new task, or formulating any technical response. This skill enforces the core communication style, verification checks, and formatting rules.
+description: Use when interacting with Matteo, starting any new task, or formulating any technical response
 ---
 
 # Matteo's Core Habits (Master Contract)
