@@ -11,4 +11,4 @@ When starting a new task, check this list. If you find a similar project, you MU
 ## Index of Projects
 *(Nessun progetto registrato ancora. Aggiungi i percorsi ai log dei futuri progetti qui sotto man mano che li completi).*
 
-- [Example Project] (Path: `C:\Users\Matteo\Lavori\example\.agents\PROJECT_LOG.md`)
+- [Example Project] (Path: `~/Lavori/example/.agents/PROJECT_LOG.md`)
