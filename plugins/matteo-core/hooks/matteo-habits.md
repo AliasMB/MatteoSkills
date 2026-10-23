@@ -38,8 +38,10 @@ Passa sempre modello ed effort espliciti: senza, il sotto-agente eredita quelli 
 
 | Task | Modello | Effort |
 |---|---|---|
-| Semplice e mirato: trovare file, cercare, leggere ed estrarre dati, controlli puntuali | `haiku` | `xhigh` |
-| Complessità media: analisi su più file, modifiche circoscritte, review | `sonnet` | `medium` |
+| Esecuzione su percorso noto: fonte, codice o file già noti, estrarre dati, ricerche web semplici, controlli puntuali | `haiku` | `xhigh` |
+| Trovare qualcosa di cui non si sa dove sia o decidere quando fermarsi; analisi su più file, modifiche circoscritte, review | `sonnet` | `medium` |
 | Complessità alta o ambigua, architettura, coordinamento di altri agenti | `opus` | `medium` |
+
+Nel prompt di ogni sotto-agente metti un limite di tentativi e cosa fare quando lo raggiunge (fermarsi e riportare cosa manca). Se il task ha più parti indipendenti, lancia un agente per parte.
 
 Se il risultato non va, prima controlla che le istruzioni date fossero chiare e complete, poi rilancia subito con il modello successivo (`haiku` → `sonnet` → `opus`) invece di alzare l'effort.

@@ -1,6 +1,6 @@
 {
   "name": "matteo-core",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Contratto di lavoro con Matteo (hook a ogni sessione) e consuntivo ore ActivityWatch.",
   "author": {
     "name": "Matteo Ballan"
