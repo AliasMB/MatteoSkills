@@ -1,0 +1,8 @@
+{
+  "name": "matteo-omron",
+  "version": "1.0.0",
+  "description": "Omron Sysmac Studio: lettura e confronto progetti dalla cache locale.",
+  "author": {
+    "name": "Matteo Ballan"
+  }
+}

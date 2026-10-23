@@ -1,0 +1,8 @@
+{
+  "name": "matteo-siemens",
+  "version": "1.0.0",
+  "description": "Siemens TIA Portal: blocchi SCL standard e safety.",
+  "author": {
+    "name": "Matteo Ballan"
+  }
+}

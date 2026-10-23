@@ -1,0 +1,29 @@
+{
+  "name": "matteo-skills",
+  "description": "Skill e regole di lavoro di Matteo Ballan (automazione industriale).",
+  "owner": {
+    "name": "Matteo Ballan"
+  },
+  "plugins": [
+    {
+      "name": "matteo-core",
+      "source": "./plugins/matteo-core",
+      "description": "Contratto di lavoro con Matteo (hook a ogni sessione) e consuntivo ore ActivityWatch."
+    },
+    {
+      "name": "matteo-siemens",
+      "source": "./plugins/matteo-siemens",
+      "description": "Siemens TIA Portal: blocchi SCL standard e safety."
+    },
+    {
+      "name": "matteo-beckhoff",
+      "source": "./plugins/matteo-beckhoff",
+      "description": "Beckhoff TwinCAT 3 (ST/ExST): naming, tipi, sintassi, pattern, errori di build."
+    },
+    {
+      "name": "matteo-omron",
+      "source": "./plugins/matteo-omron",
+      "description": "Omron Sysmac Studio: lettura e confronto progetti dalla cache locale."
+    }
+  ]
+}
