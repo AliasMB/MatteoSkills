@@ -30,3 +30,16 @@ Esempio (370_SMEG): Matteo sospettava subito il firmware CPU; l'ipotesi fu riman
 Molti ambienti, WinCC Unified in testa, accettano configurazioni incoerenti senza errori di compilazione né a runtime. Se qualcosa non compare o si comporta male in silenzio, confronta la configurazione con l'esempio ufficiale del costruttore; se un oggetto "non si vede", controlla prima la geometria (contenitore, canvas, z-order) e l'evento associato.
 
 Esempio (HMI 370_SMEG): campi sovrapposti al cambio pagina per `ChangeScreen` su `Press key` invece di `Click left mouse button`; una Screen window vuota perché la pagina era alta 80 punti.
+
+## 7. Sotto-agenti: quando e con quale modello
+Lancia un sotto-agente quando il lavoro è autonomo e può tornare come riassunto: ricerche ampie, log o file lunghi, indagini indipendenti in parallelo. Per modifiche rapide o lavoro con molto botta e risposta resta nella conversazione principale.
+
+Passa sempre modello ed effort espliciti: senza, il sotto-agente eredita quelli della sessione (di solito Opus).
+
+| Task | Modello | Effort |
+|---|---|---|
+| Semplice e mirato: trovare file, cercare, leggere ed estrarre dati, controlli puntuali | `haiku` | `xhigh` |
+| Complessità media: analisi su più file, modifiche circoscritte, review | `sonnet` | `medium` |
+| Complessità alta o ambigua, architettura, coordinamento di altri agenti | `opus` | `medium` |
+
+Se il risultato non va, prima controlla che le istruzioni date fossero chiare e complete, poi rilancia subito con il modello successivo (`haiku` → `sonnet` → `opus`) invece di alzare l'effort.
