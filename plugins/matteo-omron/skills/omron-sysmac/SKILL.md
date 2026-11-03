@@ -1,11 +1,13 @@
 ---
 name: omron-sysmac
-description: "Legge, cerca e confronta progetti Omron Sysmac Studio (NJ/NX) dalla cache C:\\OMRON\\Data, con ladder convertito in espressioni. Usa per codice, variabili, POU, reti ladder o FB di un PLC Omron, anche \"dove viene usata la variabile X\"."
+description: "Legge, cerca e confronta progetti Omron Sysmac Studio (NJ/NX) dalla cache C:\\OMRON\\Data, con ladder convertito in espressioni, e genera XML IEC 61131-10 da importare per scrivere programmi. Usa per codice, variabili, POU, reti ladder o FB di un PLC Omron, anche \"dove viene usata la variabile X\", per scrivere un progetto o convertirne uno da CX-Programmer."
 ---
 
-# Omron Sysmac — consultazione progetti
+# Omron Sysmac — consultazione e scrittura progetti
 
 Script: `${CLAUDE_SKILL_DIR}/scripts/sysmac.py` (Python stdlib, lanciare con `python -I`). Sola lettura su `C:\OMRON\Data`.
+
+**Per scrivere un progetto o convertirne uno da CX-Programmer leggi `references/scrivere-progetto.md`.** In breve: si genera un XML IEC 61131-10 e Matteo lo importa da `Tools` > `IEC 61131-10 XML` > `Import`. Provato solo su logica a bit senza motion (NX1P2, 1.64): motion, EtherCAT, FB utente e il resto sono ancora da provare, e va detto a Matteo prima di usarli.
 
 ## Workflow
 
@@ -29,7 +31,7 @@ Script: `${CLAUDE_SKILL_DIR}/scripts/sysmac.py` (Python stdlib, lanciare con `py
    - chi la legge: `\bNomeVar\b` nelle righe condizione
    - dichiarazione: `vars/` (globali), `pou/<...>/_variabili.st` o testa del file POU (locali), `types.st` (struct/enum)
 
-5. **Rispondi con riferimenti puntuali**: `Programma / sezione / R<n>`, variabile, valore. Matteo applica lui le modifiche in Sysmac Studio: non modificare mai i file in `C:\OMRON`.
+5. **Rispondi con riferimenti puntuali**: `Programma / sezione / R<n>`, variabile, valore. Matteo applica lui le modifiche in Sysmac Studio, a mano o importando l'XML generato: non modificare mai i file in `C:\OMRON`.
 
 ## Struttura export
 

@@ -1,7 +1,7 @@
 {
   "name": "matteo-omron",
-  "version": "1.0.0",
-  "description": "Omron Sysmac Studio: lettura e confronto progetti dalla cache locale.",
+  "version": "1.1.0",
+  "description": "Omron Sysmac Studio: lettura e confronto progetti dalla cache locale, scrittura tramite import XML IEC 61131-10.",
   "author": {
     "name": "Matteo Ballan"
   }
