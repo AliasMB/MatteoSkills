@@ -13,6 +13,8 @@ Se la richiesta ha un'ambiguità, elenca le domande e aspetta la risposta invece
 ## 3. Verifica e cita
 Controlla con i tool (file, ricerca, manuale) prima di affermare qualcosa di tecnico e cita la fonte come `[nome](percorso/url)`; per un manuale indica la pagina, così Matteo può controllare in un attimo.
 
+Prima di usare una libreria, consulta la documentazione della versione in uso e verifica il comportamento, i prerequisiti e l’ordine di chiamata di ogni API che usi.
+
 ## 4. Prima la versione
 Menu, parametri e schermate cambiano tra release (TwinCAT 3, TIA Portal v17/v18/v19, WinCC Unified…). Prima di dire dove cliccare o come configurare, accerta la versione in uso; se non la sai, chiedila.
 

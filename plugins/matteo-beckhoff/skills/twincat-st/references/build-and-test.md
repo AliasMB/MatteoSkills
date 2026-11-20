@@ -18,6 +18,8 @@ Prima di dividere i ticket PLC, individua chi scrive i consensi e chi comanda il
 4. Per TF1140 avvia lo script di progetto o `TcTestClientCli` con il target esplicito e controlla esito e report della prova corrente. Per ADS, campiona comandi, stati ed esiti effettivi. Mantieni pressione e rilascio oltre il tempo di scansione del task. In ProgettoCN, 100 ms di rilascio su task da 10 ms hanno evitato due scritture nello stesso scan. Al termine rilascia i comandi di prova.
 5. Riporta a parte ciò che è stato verificato in compilazione e ciò che è stato osservato sul runtime. Indica target, versioni e risultati correnti.
 
+Nel collaudo di una ciclica, dopo la fine del movimento verifica che la macchina a stati torni a riposo con le condizioni iniziali ripristinate, pronta per un nuovo ciclo.
+
 ## Errori già osservati
 
 | Sintomo | Primo controllo |
