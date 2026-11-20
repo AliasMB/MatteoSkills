@@ -1,6 +1,6 @@
 ---
 name: twincat-st
-description: "Regole Beckhoff TwinCAT 3 in ST/ExST: naming (notazione ungherese), tipi di dato e memoria, sintassi, pattern avanzati (metodi, proprietà, FB_init), errori di compilazione. Usa per scrivere, nominare o correggere codice TwinCAT."
+description: "Regole ST/ExST e procedura di verifica per Beckhoff TwinCAT 3. Usa per scrivere, nominare o correggere codice, compilare un PLC o eseguire test su UmRT, con ADS o TF1140."
 ---
 
 # TwinCAT 3 — regole ST/ExST
@@ -14,3 +14,4 @@ Leggi il riferimento adatto PRIMA di scrivere o correggere codice. I file sono i
 | Operatori, precedenze, IF/CASE/FOR/WHILE, MOD/SHL/ADR/BITADR, parole riservate IEC | `syntax-control-flow.md` |
 | Proprietà GET/SET, metodi, FB_init/FB_reinit/FB_exit, state machine, pragma, PlcTaskSystemInfo | `advanced-patterns.md` |
 | Errori di build, warning del compilatore, `CheckPlcSyntaxAsync` fallito | `troubleshooting.md` |
+| Compilazione PLC, test su UmRT o collaudo tramite ADS o TF1140 | `build-and-test.md` |
