@@ -6,6 +6,10 @@
 2. Verifica build XAE e runtime, versioni delle librerie, piattaforma, AMS Net ID e licenze sul target effettivo. Su UmRT 4026 seleziona `TwinCAT OS (x64)` e verifica l’istanza dedicata prima di attivare. La licenza di un’altra istanza o di una configurazione precedente può essere diversa.
 3. Conserva CRLF e BOM dei file TwinCAT. Per un PLC nuovo parti da `TIPC.CreateChild` con il template Beckhoff e usa come base i GUID, i task e i riferimenti XTI generati. Se modifichi un .plcproj, verifica che abbia al massimo un blocco `ProjectExtensions`. [Creazione del progetto PLC](https://infosys.beckhoff.com/content/1033/tc3_automationinterface/21842439947.html)
 
+## Ticket PLC in parallelo
+
+Prima di dividere i ticket PLC, individua chi scrive i consensi e chi comanda il gruppo NC. Se ciclo CN e jog condividono uno di questi punti, assegna la logica condivisa a un solo esecutore. Concorda con gli altri i comandi e gli stati che ciascun ticket può usare.
+
 ## Compilazione e prova
 
 1. Quando disponibile, esegui il controllo ST del progetto, per esempio `plc.py check --sln <soluzione.sln>`. Compila poi con lo script del repository o con Automation Interface. Il parser ST verifica la sintassi dei corpi. La compilazione verifica tipi, riferimenti e membri.
