@@ -1,0 +1,8 @@
+{
+  "name": "matteo-setup",
+  "version": "1.0.0",
+  "description": "Setup rapido dell'ambiente di sviluppo LLM (tool CLI e skill globali per Claude, Google Antigravity e ChatGPT Codex).",
+  "author": {
+    "name": "Matteo Ballan"
+  }
+}

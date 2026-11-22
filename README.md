@@ -8,6 +8,7 @@ Marketplace di plugin per Claude Code.
 | `matteo-siemens` | `tia-portal-scl-blocks` |
 | `matteo-beckhoff` | `twincat-st` |
 | `matteo-omron` | `omron-sysmac` |
+| `matteo-setup` | `llm-env-setup` |
 
 ```
 claude plugin marketplace add AliasMB/MatteoSkills

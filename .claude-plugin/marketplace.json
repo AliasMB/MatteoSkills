@@ -24,6 +24,11 @@
       "name": "matteo-omron",
       "source": "./plugins/matteo-omron",
       "description": "Omron Sysmac Studio: lettura e confronto progetti dalla cache locale."
+    },
+    {
+      "name": "matteo-setup",
+      "source": "./plugins/matteo-setup",
+      "description": "Setup rapido dell'ambiente di sviluppo LLM (tool CLI e skill globali per Claude, Google Antigravity e ChatGPT Codex)."
     }
   ]
 }
