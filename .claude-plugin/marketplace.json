@@ -29,6 +29,27 @@
       "name": "matteo-setup",
       "source": "./plugins/matteo-setup",
       "description": "Setup rapido dell'ambiente di sviluppo LLM (tool CLI e skill globali per Claude, Google Antigravity e ChatGPT Codex)."
+    },
+    {
+      "name": "doomer-agent",
+      "source": { "source": "github", "repo": "jnh12/doomer-agent" },
+      "description": "Studia video brevi salvati (Reel, TikTok, Shorts) e ne ricava skill riutilizzabili.",
+      "strict": false,
+      "skills": ["./"]
+    },
+    {
+      "name": "agent-reach",
+      "source": { "source": "github", "repo": "Panniantong/Agent-Reach" },
+      "description": "Lettura web e social senza API (YouTube, Reddit, GitHub, ...). Richiede la CLI: uv tool install dallo zip della release.",
+      "strict": false,
+      "skills": ["./agent_reach/skill"]
+    },
+    {
+      "name": "agent-browser",
+      "source": { "source": "github", "repo": "vercel-labs/agent-browser" },
+      "description": "Automazione browser da CLI per agenti. Richiede la CLI: npm install -g agent-browser && agent-browser install.",
+      "strict": false,
+      "skills": ["./skills/agent-browser"]
     }
   ]
 }
